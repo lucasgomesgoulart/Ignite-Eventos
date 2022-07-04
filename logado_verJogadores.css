@@ -1,0 +1,265 @@
+html {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/Ignite_Eventos-main/1.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+}
+
+/* Inicio Tabela */
+
+.swal2-popup {
+    font-size: 1.5rem !important;
+  }
+
+.records{
+    font-family: 'Lato', sans-serif;
+    width: 70%;
+    user-select: none;
+    margin-left: 400px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.records th{
+    height: 50px;
+    background-color: #00000090;
+    font-size: 2rem;  
+    text-align: center;
+}
+
+.records td{
+    height: 50px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.records th:last-child,
+.records td:last-child{
+    padding: 0;
+    min-width: 140px;
+    text-align: center;
+}
+
+.records tr:hover{
+    background-color: #00000040;
+}
+
+/* Fim Tabela */
+
+
+/* Modal */
+
+.modal {
+    font-family: 'Lato', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60vw;
+    height: 35vh;
+    margin: 15vh auto;
+    padding-bottom: 20px;
+    background-color: #CCC;
+    box-shadow: 1px 1px 10px black;
+}
+
+.modal-header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.8rem;
+    background-color: rgba(8, 8, 8, 0.89);
+    color: white;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background-color: #FF4949;
+    color: white;
+}
+
+.modal-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.modal-field {
+    width: calc(50% - 10px);
+    height: 40px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 4px black;
+    padding: 0 10px;
+    font-size: 1.5rem;
+}
+
+.modal-field::placeholder {
+    color: black;
+}
+
+.modal-field:hover {
+    border: 2px solid #F7C352;
+    box-shadow: 0 0 3px #F7C352;
+}
+
+.modal-footer{
+    background-color: inherit;
+    text-align: right;
+    padding: 0 20px;
+}
+
+.modal-footer button {
+    margin-top: -5px;
+    width: 10vw;
+    height: 4vh;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.button-salvar {
+    background-color: #13CE66;
+    margin-right: 10px;
+}
+
+.button-salvar:hover {
+    background-color: #2da563;
+}
+
+.button-cancelar {
+    background-color: #FF4949;
+}
+
+.button-cancelar:hover {
+    background-color: #bb4e4e;
+}
+
+@media (max-width:480px){
+    .modal{
+        top:100%;
+        transition: all 1s ease;
+    }
+    .modal.active{
+        top:0;
+    }
+    .modal-content{
+        margin:0;
+        width:100%;
+        position:fixed;
+    }
+    .modal-field{
+        width:100%;
+    }
+}
+
+/* Fim Modal */
+
+
+/* Botoes Editar e Excluir */
+
+.botao-excluir{
+    border-style: none;
+    height: 40px;
+    background-color: #ff4949;
+    color: white;
+    font-size: 2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 80px;
+}
+
+.botao-excluir:hover {
+    background-color: #b14c4c;
+}
+
+.editar-botao{
+    border-style: none;
+    height: 40px;
+    background-color: #49d5ff;
+    color: white;
+    font-size: 2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 80px;
+}
+
+.editar-botao:hover {
+    background-color: #4f8da0;
+}
+
+/* Fim botoes */
+
+
+/* Inicio Principal */
+
+.content-header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 32pt;
+    margin-left: 40%;
+    margin-top: 40px;
+    width: 25vw;
+    height: 55px;
+    text-align: center;
+    background-color: #00000060;
+    border-radius: 40px;
+}
+
+.button_cadastro{
+    width: 130px;
+    height: 60px;
+    margin-left: 400px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgba(20, 20, 20, 1);
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    border: 1px solid white;
+
+}
+
+.button_cadastro:hover {
+    background-color: rgb(100, 100, 100);
+    color: white;
+    transition: 0.5;
+}

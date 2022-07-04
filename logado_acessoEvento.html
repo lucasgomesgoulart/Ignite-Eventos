@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Acesso ao Evento</title>
+    <link rel="stylesheet" href="menu_geral.css">
+    <link rel="stylesheet" href="logado_acessoEvento.css">
+</head>
+<body>
+
+    <header>
+        <div class="menu-content">
+            <a href="index.html"><img src="1-removebg-preview.png"></a>
+            <nav class="header-menu">
+                <ul class="list-itens">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="menu">
+        <button id="ver_jogadores">Lista Participante</button>
+        <button id="cadastrar_digital">Controle de Acesso</button>
+        <button onclick="sairPerfil()">Logout</button>
+    </div>
+
+    <h1>Controle de Acesso</h1>
+
+    <div class="content-header">
+        <table class="records" id="tabelaJogadores">
+            <thead>
+                <tr>
+                    <th>Modalidade</th>
+                    <th>Nome Participante</th>
+                    <th>Senha</th>
+                    <th>Entrada</th>
+                    <th>Saida</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody  id="lista_content">
+            
+            </tbody>    
+        </table>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <header class="modal-header">
+                <h2>Informe a Senha</h2>
+                <span class="modal-close" id="modalClose">&#10006</span>
+            </header>
+            <form id="form" class="modal-form">
+                <input type="password" id="password-acesso" placeholder="Informe a Senha de 4 Digitos">
+            </form>
+            <footer class="modal-footer">
+                <button id="botao-confirmar" class="botao-confirmar">Confirmar</button>
+                <button id="botao-cancelar" class="botao-cancelar">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-2">
+        <div class="modal-content">
+            <header class="modal-header">
+                <h2>Informe a Senha</h2>
+                <span class="modal-close" id="modalClose-2">&#10006</span>
+            </header>
+            <form id="form-2" class="modal-form">
+                <input type="password" id="password-acesso-2" placeholder="Informe a Senha de 4 Digitos">
+            </form>
+            <footer class="modal-footer">
+                <button id="botao-confirmar-2" class="botao-confirmar">Confirmar</button>
+                <button id="botao-cancelar-2" class="botao-cancelar">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+
+    <script src="dassboard_logado.js"></script>
+    <script src="acesso_ao_evento.js"></script>
+</body>
+</html>

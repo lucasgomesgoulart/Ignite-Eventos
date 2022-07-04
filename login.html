@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Eventos Ignite</title>
+    <link rel="stylesheet" href="menu_geral.css">
+    <link rel="stylesheet" href="style_login.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+
+<body>
+    <header>
+        <div class="menu-content">
+            <a href="index.html"><img src="1-removebg-preview.png"></a>
+            <nav class="header-menu">
+                <ul class="list-itens">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="formulario">
+            <label for="usuario" id="labelUsuario">Usuário</label>
+            <input type="text" id="usuario">
+
+            <label for="senha" id="labelSenha">Senha</label>
+            <input type="password" id="senha">
+
+            <button onclick="entrar()">Entrar</button>
+            <p>Não possui uma conta? <a href="cadastro.html">Clique aqui!</a></p>
+        </div>
+    </div>
+</body>
+
+<script src="loginAutenticacao.js"></script>
+</html>

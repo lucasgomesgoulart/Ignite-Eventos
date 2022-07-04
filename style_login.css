@@ -1,0 +1,82 @@
+html {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(//Ignite_Eventos-main/1.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+}
+
+/* A partir daqui, é a tela de LOGIN */
+
+.swal2-popup {
+    font-size: 1.5rem !important;
+  }
+
+.main {
+    background: rgba(22, 22, 22, 0.4);
+    width: 550px;
+    border: 1px solid white;
+    height: 600px;
+    left: 46%;
+    margin: -130px 0 0 -210px;
+    padding: 10px;
+    position: absolute;
+    top: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.formulario > label {
+    color: #FFFFFF;
+    font-size: 14pt;
+    font-weight: 1000;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.formulario > input {
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    background:rgba(22, 22, 22, 0.4);
+    color: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.336);
+    outline: none;
+}
+
+.formulario p{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.formulario > input:focus {
+    transform: scale(1.05);
+}
+
+.formulario > button {
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    width: 45%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.formulario > button:hover {
+    background-color: rgb(61, 61, 61);
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Participantes</title>
+    <link rel="stylesheet" href="menu_geral.css">
+    <link rel="stylesheet" href="logado_verJogadores.css">
+    <script src="dassboard_logado.js" defer></script>
+    <script src="logado_CRUD.js" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-content">
+            <a href="index.html"><img src="1-removebg-preview.png"></a>
+            <nav class="header-menu">
+                <ul class="list-itens">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="menu">
+        <button id="ver_jogadores">Lista Participantes</button>
+        <button id="acesso_evento">Controle de Acesso</button>
+        <button onclick="sairPerfil()">Logout</button>
+    </div>
+
+    <h1>Lista Participantes</h1>
+
+    <main>
+        <div class="content-header">
+            <button type="button" class="button_cadastro" id="cadastrarJogadores">Cadastrar Participantes</button>
+            <table class="records" id="tabelaJogadores">
+                <thead>
+                    <tr>
+                        <th>Modalidade</th>
+                        <th>Nome Participante</th>
+                        <th>Data de Nascimento</th>
+                        <th>Telefone</th>
+                        <th>CPF</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody  id="lista_content">
+                
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Participante</h2>
+                    <span class="modal-close" id="modalClose">&#10006</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <select id="mySelect" class="modal-field">
+                        <option value="0">Selecione</option>
+                        <option value="Futebol">Futebol</option>
+                        <option value="Volei">Volei</option>
+                        <option value="Basquete">Basquete</option>
+                        <option value="Handei-Ball">Handei-ball</option>
+                    </select>
+                    <input type="text" id="nomeJogador" data-index = 'new' class="modal-field" placeholder="Nome do Participante" required>
+                    <input type="date" id="dtNascimento" class="modal-field" placeholder="Data de nascimento" required>
+                    <input type="tel" id="telefone" class="modal-field" placeholder="Telefone" required>
+                    <input type="number" id="cpf" class="modal-field" placeholder="CPF" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="button-salvar" class="button-salvar">Salvar</button>
+                    <button id="cancelar" class="button-cancelar">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    
+</html>

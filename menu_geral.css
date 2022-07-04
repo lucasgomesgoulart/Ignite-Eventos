@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@400;700&display=swap');
+/* Zerando o CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo da tela*/
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    color: #FFFFFF;
+}
+
+/* Menu - Header e NavBar*/
+
+header {
+    width: 100%;
+    height: 9vh;
+    background-color: rgba(10, 9, 9, 0.603);
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+
+}
+
+.menu-content > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18pt;
+}
+
+.menu-content > a > img {
+    width: 240px;
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+/* Links do menu */
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    /* Fazer o efeito em baixo do link */
+    transform: 1ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.336);
+    transition: all 0.5s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+
+.menu {
+    margin-top: 15px;
+    width: 13%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu button {
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: rgba(20, 20, 20, 1);
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-left: 15px;
+}
+
+.menu button:hover {
+    background-color: rgb(100, 100, 100);
+    color: white;
+}

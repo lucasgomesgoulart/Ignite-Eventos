@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Eventos Ignite</title>
+    <link rel="stylesheet" href="menu_geral.css">
+    <link rel="stylesheet" href="style_cadastro.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu-content">
+            <a href="index.html"><img src="1-removebg-preview.png"></a>
+            <nav class="header-menu">
+                <ul class="list-itens">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <form>
+            <div class="main-login">
+                <div class="formulario">
+                    <label for="usuario" id="labelUsuario">Usuário de acesso</label>
+                    <input type="text" name="usuario" id="usuario" placeholder="Insira no minimo 6 letras">
+                
+                    <label for="senha" id="labelSenha">Senha</label>
+                    <input type="password" name="senha" id="senha">
+                
+                    <label for="senhaConfirm" id="labelSenhaConfirm">Confirmar Senha</label>
+                    <input type="password" name="senha" id="senhaConfirm">
+
+                    <label for="eventos">Evento</label>
+                    <select id="select_evento">
+                        <option value="0">Selecione</option>
+                        <option value="2020" disabled>JIUDesc 2019</option>
+                        <option value="2021" disabled>RD Summit 2021</option>
+                        <option value="2022">JIUDesc 2022</option>
+                    </select>
+                    <button onclick="cadastrar()">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="Eventos.js"></script>
+    <script src="cadastro.js"></script>
+</body>
+
+</html>

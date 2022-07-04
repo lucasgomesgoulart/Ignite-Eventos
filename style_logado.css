@@ -1,0 +1,56 @@
+html {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/Ignite_Eventos-main/1.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+}
+
+.menu {
+    width: 13%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imgTutorial{
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+.imgTutorial img{
+    display: flex;
+    width: 45%;
+    padding: 0 70px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.menu button {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+}
+
+.tutorial-logado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.tutorial-logado > img {
+    width: 35vw;
+    margin-left: -800px;
+}
+

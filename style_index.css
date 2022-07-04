@@ -1,0 +1,81 @@
+html {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/Ignite_Eventos-main/3.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+}
+
+/* Centro (content) conteudo principal */
+
+main {
+    /* 93 pois o header usa 7 */
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Textos Principais*/
+
+.texto-principal {
+    width: 850px;
+    font-size: 32pt;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.segundo-texto {
+    margin-bottom: 7rem;
+    font-size: 20px;
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* BOTOES */
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btns button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* relativo para o efeito BEFORE */
+    position: relative;
+    transition: 1.5s;
+    border-radius: 20px;
+}
+
+.btns button:before {
+    content: '';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 60px;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transform: 1s;
+}
+
+.btns button:hover:before {
+    width: 100%;
+}
